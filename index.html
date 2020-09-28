@@ -1,10 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Kiarash Sabahi</title>
-</head>
-<body>
-    Hello :)
-</body>
-</html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>
+        /* Copied from https://github.com/vercel/next-site/pull/671/commits/d9fe3b682576d3a629d1dfba5c7be862c90349a2 */
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 100;
+          font-display: block;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/1j9eBI5Qt3wTPh2GNseKtR/2bd80dfe8bf7a75629492c8cf5d1209c/inter-var-latin.woff2")
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 200;
+          font-display: block;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/1j9eBI5Qt3wTPh2GNseKtR/2bd80dfe8bf7a75629492c8cf5d1209c/inter-var-latin.woff2")
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 300;
+          font-display: block;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/1j9eBI5Qt3wTPh2GNseKtR/2bd80dfe8bf7a75629492c8cf5d1209c/inter-var-latin.woff2")
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-display: block;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/1j9eBI5Qt3wTPh2GNseKtR/2bd80dfe8bf7a75629492c8cf5d1209c/inter-var-latin.woff2")
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-display: block;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/1j9eBI5Qt3wTPh2GNseKtR/2bd80dfe8bf7a75629492c8cf5d1209c/inter-var-latin.woff2")
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-display: block;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/1j9eBI5Qt3wTPh2GNseKtR/2bd80dfe8bf7a75629492c8cf5d1209c/inter-var-latin.woff2")
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-display: block;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/1j9eBI5Qt3wTPh2GNseKtR/2bd80dfe8bf7a75629492c8cf5d1209c/inter-var-latin.woff2")
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 800;
+          font-display: block;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/1j9eBI5Qt3wTPh2GNseKtR/2bd80dfe8bf7a75629492c8cf5d1209c/inter-var-latin.woff2")
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 900;
+          font-display: block;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/1j9eBI5Qt3wTPh2GNseKtR/2bd80dfe8bf7a75629492c8cf5d1209c/inter-var-latin.woff2")
+            format("woff2");
+          unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+            U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+            U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+
+        /* these other fonts are only used and downloaded when a special chars is shown
+in most cases, they are not downloaded at all */
+
+        /* latin-ext */
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 100;
+          font-display: swap;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/2vAus5X8Pt7l3WeWRB9lIN/e15f294bf2118bebb18383d2ba475994/inter-var-latin-ext.woff2")
+            format("woff2");
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 200;
+          font-display: swap;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/2vAus5X8Pt7l3WeWRB9lIN/e15f294bf2118bebb18383d2ba475994/inter-var-latin-ext.woff2")
+            format("woff2");
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 300;
+          font-display: swap;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/2vAus5X8Pt7l3WeWRB9lIN/e15f294bf2118bebb18383d2ba475994/inter-var-latin-ext.woff2")
+            format("woff2");
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-display: swap;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/2vAus5X8Pt7l3WeWRB9lIN/e15f294bf2118bebb18383d2ba475994/inter-var-latin-ext.woff2")
+            format("woff2");
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-display: swap;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/2vAus5X8Pt7l3WeWRB9lIN/e15f294bf2118bebb18383d2ba475994/inter-var-latin-ext.woff2")
+            format("woff2");
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 600;
+          font-display: swap;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/2vAus5X8Pt7l3WeWRB9lIN/e15f294bf2118bebb18383d2ba475994/inter-var-latin-ext.woff2")
+            format("woff2");
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-display: swap;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/2vAus5X8Pt7l3WeWRB9lIN/e15f294bf2118bebb18383d2ba475994/inter-var-latin-ext.woff2")
+            format("woff2");
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 800;
+          font-display: swap;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/2vAus5X8Pt7l3WeWRB9lIN/e15f294bf2118bebb18383d2ba475994/inter-var-latin-ext.woff2")
+            format("woff2");
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+        @font-face {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 900;
+          font-display: swap;
+          src: url("https://assets.ctfassets.net/mbrzsuirfz03/2vAus5X8Pt7l3WeWRB9lIN/e15f294bf2118bebb18383d2ba475994/inter-var-latin-ext.woff2")
+            format("woff2");
+          unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+            U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+        }
+      </style><meta name="theme-color" content="#2a3ffb"><meta name="msapplication-TileColor" content="#2a3ffb"><meta name="viewport" content="width=device-width"><meta charset="utf-8"><meta name="twitter:card" content="summary_large_image"><title>Kiarash Sabahi</title><style data-emotion-css="be9d8r">.css-be9d8r{box-sizing:border-box;margin:0;min-width:0;background-color:#e4ebf1;min-height:100vh;min-widht:100vw;}</style><style data-emotion-css="niytv4">.css-niytv4{box-sizing:border-box;margin:0;min-width:0;padding-left:0;padding-right:0;margin-left:auto;margin-right:auto;max-width:1084px;padding-bottom:0;}@media screen and (min-width:40em){.css-niytv4{padding-left:0;padding-right:0;padding-bottom:0;}}@media screen and (min-width:52em){.css-niytv4{padding-left:42px;padding-right:42px;padding-bottom:42px;}}</style><style data-emotion-css="17f65f">.css-17f65f{box-sizing:border-box;margin:0;min-width:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-left:16px;padding-right:16px;min-height:0;}@media screen and (min-width:40em){.css-17f65f{padding-left:16px;padding-right:16px;min-height:0;}}@media screen and (min-width:52em){.css-17f65f{padding-left:0;padding-right:0;min-height:42px;}}</style><style data-emotion-css="15b8gqs">.css-15b8gqs{box-sizing:border-box;margin:0;min-width:0;color:rgba(0,0,0,0.5);-webkit-text-decoration:none;text-decoration:none;font-family:Inter,system-ui,sans-serif !important;font-weight:normal;font-size:15px;}</style><style data-emotion-css="187hn6l">.css-187hn6l{box-sizing:border-box;margin:0;min-width:0;padding-top:14px;padding-bottom:14px;}</style><style data-emotion-css="1lohbqv">.css-1lohbqv{box-sizing:border-box;margin:0;min-width:0;font-weight:600;}</style><style data-emotion-css="10nf7hq">.css-10nf7hq{box-sizing:border-box;margin:0;min-width:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}</style><style data-emotion-css="1ti5nfs">.css-1ti5nfs{box-sizing:border-box;margin:0;min-width:0;margin-left:12px;padding-top:3px;}</style><style data-emotion-css="37nf1f">.css-37nf1f{box-sizing:border-box;margin:0;min-width:0;background-color:#fff;}</style><style data-emotion-css="j7onkr">.css-j7onkr{box-sizing:border-box;margin:0;min-width:0;margin:0 auto;width:100%;max-width:1000px;background-color:#fff;overflow:hidden;}</style><style data-emotion-css="1r9sjyo">.css-1r9sjyo{box-sizing:border-box;margin:0;min-width:0;margin:0 auto;width:100%;max-width:990px;padding-left:24px;padding-right:24px;padding-top:40px;padding-bottom:40px;}@media screen and (min-width:40em){.css-1r9sjyo{padding-left:60px;padding-right:60px;padding-top:60px;padding-bottom:60px;}}</style><style data-emotion-css="e6n3ma">.css-e6n3ma{box-sizing:border-box;margin:0;min-width:0;margin-bottom:64px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;position:relative;}@media screen and (min-width:40em){.css-e6n3ma{-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;}}</style><style data-emotion-css="1sek0l7">.css-1sek0l7{box-sizing:border-box;margin:0;min-width:0;z-index:2;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;}</style><style data-emotion-css="nesjrx">.css-nesjrx{box-sizing:border-box;margin:0;min-width:0;font-family:Poppins,sans-serif;font-weight:700;line-height:1.35;font-family:Poppins,sans-serif;line-height:1.35;font-weight:700;color:#000000;font-size:36px;}</style><style data-emotion-css="5mf0j6">.css-5mf0j6{box-sizing:border-box;margin:0;min-width:0;background-color:#000000;height:3px;width:60px;margin-right:8px;}</style><style data-emotion-css="1t88zt9">.css-1t88zt9{box-sizing:border-box;margin:0;min-width:0;font-family:Poppins,sans-serif;line-height:1.7;font-weight:400;color:#000000;font-size:18px;}</style><style data-emotion-css="tnpq3b">.css-tnpq3b{box-sizing:border-box;margin:0;min-width:0;font-family:Poppins,sans-serif;line-height:1.7;font-weight:400;color:#000000;font-size:16px;max-width:450px;padding-left:0;padding-top:48px;}@media screen and (min-width:40em){.css-tnpq3b{padding-left:50px;padding-top:5px;}}</style><style data-emotion-css="99hwi2">.css-99hwi2{box-sizing:border-box;margin:0;min-width:0;font-family:Poppins,sans-serif;line-height:1.7;font-weight:400;color:#878787;position:absolute;top:-45px;left:-50px;font-weight:700;color:#350157;font-size:220px;line-height:0.9;z-index:0;opacity:0.1;}</style><style data-emotion-css="q2wk8b">.css-q2wk8b{box-sizing:border-box;margin:0;min-width:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;}</style><style data-emotion-css="9kcjkz">.css-9kcjkz{box-sizing:border-box;margin:0;min-width:0;width:100%;z-index:2;-webkit-order:2;-ms-flex-order:2;order:2;padding-right:16px;}@media screen and (min-width:40em){.css-9kcjkz{width:25%;-webkit-order:1;-ms-flex-order:1;order:1;padding-right:0;}}</style><style data-emotion-css="1lyrhyb">.css-1lyrhyb{box-sizing:border-box;margin:0;min-width:0;margin-bottom:56px;}</style><style data-emotion-css="1cxhghz">.css-1cxhghz{box-sizing:border-box;margin:0;min-width:0;margin-bottom:24px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}</style><style data-emotion-css="8lui3q">.css-8lui3q{box-sizing:border-box;margin:0;min-width:0;background-color:#000000;height:3px;width:20px;margin-right:8px;}</style><style data-emotion-css="phh6t1">.css-phh6t1{box-sizing:border-box;margin:0;min-width:0;font-family:Poppins,sans-serif;font-weight:700;line-height:1.35;font-family:Poppins,sans-serif;line-height:1.35;font-weight:700;color:#000000;font-size:16px;}</style><style data-emotion-css="10c7d0b">.css-10c7d0b{box-sizing:border-box;margin:0;min-width:0;list-style:none;margin:0;padding:0;}</style><style data-emotion-css="j02ag4">.css-j02ag4{box-sizing:border-box;margin:0;min-width:0;font-family:Poppins,sans-serif;line-height:1.7;font-weight:400;color:#878787;font-size:14px;}</style><style data-emotion-css="bmdwkd">.css-bmdwkd{box-sizing:border-box;margin:0;min-width:0;margin-bottom:56px;page-break-inside:avoid;}</style><style data-emotion-css="uq1pv2">.css-uq1pv2{box-sizing:border-box;margin:0;min-width:0;margin-bottom:16px;}</style><style data-emotion-css="bh7pdu">.css-bh7pdu{box-sizing:border-box;margin:0;min-width:0;font-family:Poppins,sans-serif;line-height:1.7;font-weight:700;color:#878787;font-size:14px;}</style><style data-emotion-css="z2ecfc">.css-z2ecfc{box-sizing:border-box;margin:0;min-width:0;font-family:Poppins,sans-serif;line-height:1.7;font-weight:400;color:#878787;font-size:14px;white-space:pre-wrap;}</style><style data-emotion-css="18n5f2i">.css-18n5f2i{box-sizing:border-box;margin:0;min-width:0;width:100%;-webkit-order:1;-ms-flex-order:1;order:1;}@media screen and (min-width:40em){.css-18n5f2i{width:75%;-webkit-order:2;-ms-flex-order:2;order:2;}}</style><style data-emotion-css="vurnku">.css-vurnku{box-sizing:border-box;margin:0;min-width:0;}</style><style data-emotion-css="8vdbrm">.css-8vdbrm{box-sizing:border-box;margin:0;min-width:0;margin-bottom:16px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}</style><style data-emotion-css="1hssjnd">.css-1hssjnd{box-sizing:border-box;margin:0;min-width:0;margin-bottom:45px;page-break-inside:avoid;}</style><style data-emotion-css="xfpfks">.css-xfpfks{box-sizing:border-box;margin:0;min-width:0;font-family:Poppins,sans-serif;font-weight:700;line-height:1.35;font-family:Poppins,sans-serif;line-height:1.35;font-weight:700;color:#000000;font-size:32px;margin-bottom:8px;}</style><style data-emotion-css="bi4upt">.css-bi4upt{box-sizing:border-box;margin:0;min-width:0;font-family:Poppins,sans-serif;line-height:1.86;font-weight:400;color:#878787;font-size:16px;margin-bottom:4px;}</style><style data-emotion-css="1kvlhqq">.css-1kvlhqq{box-sizing:border-box;margin:0;min-width:0;display:none;}@media (min-width:500px){.css-1kvlhqq{display:inline;}}</style><style data-emotion-css="1bmsfsu">.css-1bmsfsu{box-sizing:border-box;margin:0;min-width:0;display:inline;}@media (min-width:500px){.css-1bmsfsu{display:none;}}</style><style data-emotion-css="aybayc">.css-aybayc{box-sizing:border-box;margin:0;min-width:0;color:inherit;-webkit-text-decoration:inherit;text-decoration:inherit;}.css-aybayc:hover{opacity:0.7;}</style><style data-emotion-css="1yh09yi">.css-1yh09yi{box-sizing:border-box;margin:0;min-width:0;padding:0;}</style><style data-emotion-css="1wnhxku">.css-1wnhxku{box-sizing:border-box;margin:0;min-width:0;font-family:Poppins,sans-serif;line-height:1.7;font-weight:400;color:#878787;font-size:16px;margin-left:16px;padding-left:12px;}</style></head><body><div class="css-j7onkr"><main class="css-1r9sjyo"><link href="assets/css2.css" rel="stylesheet"><header class="pdf-resume-header css-e6n3ma"><div class="css-1sek0l7"><h1 class="css-nesjrx">Kiarash<!-- --> <!-- -->Sabahi</h1><div class="css-10nf7hq"><div class="css-5mf0j6"></div><div class="css-1t88zt9">Web Developer</div></div></div><div class="css-tnpq3b">Github.com/KiarashSabahi</div><div class="css-99hwi2">K<br>S</div></header><div class="pdf-page-container css-q2wk8b"><div class="pdf-page-column css-9kcjkz"><section class="css-1lyrhyb"><div class="css-1cxhghz"><div class="css-8lui3q"></div><h2 class="css-phh6t1">Contact Info</h2></div><ul class="css-10c7d0b"><li class="css-j02ag4">Gorgan<!-- -->, <!-- -->Golestan</li><li class="css-j02ag4"></li><li class="css-j02ag4">ksabahi2001@gmail.com</li><li class="css-j02ag4">09366126211</li></ul></section><section class="css-bmdwkd"><div class="css-1cxhghz"><div class="css-8lui3q"></div><h2 class="css-phh6t1">Skills</h2></div><div class="css-uq1pv2"><div class="css-bh7pdu">  TypeScript</div><div class="css-z2ecfc"></div></div><div class="css-uq1pv2"><div class="css-bh7pdu"> JavaScript</div><div class="css-z2ecfc"></div></div><div class="css-uq1pv2"><div class="css-bh7pdu">Git</div><div class="css-z2ecfc"></div></div><div class="css-uq1pv2"><div class="css-bh7pdu">NPM</div><div class="css-z2ecfc"></div></div><div class="css-uq1pv2"><div class="css-bh7pdu">NoSQL</div><div class="css-z2ecfc"></div></div><div class="css-uq1pv2"><div class="css-bh7pdu">SQL</div><div class="css-z2ecfc"></div></div><div class="css-uq1pv2"><div class="css-bh7pdu">S.O.L.I.D</div><div class="css-z2ecfc"></div></div></section><section class="css-bmdwkd"><div class="css-1cxhghz"><div class="css-8lui3q"></div><h2 class="css-phh6t1">Technologies &amp; Architectures</h2></div><div class="css-uq1pv2"><div class="css-bh7pdu">Express.js</div><div class="css-z2ecfc"></div></div><div class="css-uq1pv2"><div class="css-bh7pdu">MongoDB</div><div class="css-z2ecfc"></div></div><div class="css-uq1pv2"><div class="css-bh7pdu">Socket.io</div><div class="css-z2ecfc"></div></div><div class="css-uq1pv2"><div class="css-bh7pdu">Redis</div><div class="css-z2ecfc"></div></div><div class="css-uq1pv2"><div class="css-bh7pdu">Jest</div><div class="css-z2ecfc"></div></div><div class="css-uq1pv2"><div class="css-bh7pdu">REST</div><div class="css-z2ecfc"></div></div><div class="css-uq1pv2"><div class="css-bh7pdu">MVC (Model View Controller)</div><div class="css-z2ecfc"></div></div></section></div><div class="pdf-page-column css-18n5f2i"><section class="css-vurnku"><div class="css-8vdbrm"><div class="css-5mf0j6"></div><h2 class="css-phh6t1">Education</h2></div><div class="css-1hssjnd"><h2 class="css-xfpfks">Babol Noshirvani University of Technology</h2><div class="css-bi4upt">Bachelor of Engineering - BE, Computer Programming/Programmer, General<div class="css-1kvlhqq"> | </div><br class="css-1bmsfsu"><span>2019<!-- --> - <!-- -->2023</span></div></div></section><section class="css-vurnku"><div class="css-8vdbrm"><div class="css-5mf0j6"></div><h2 class="css-phh6t1">Personal Projects</h2></div><div class="css-1hssjnd"><h2 class="css-xfpfks"><a href="https://github.com/KiarashSabahi/Insta-clone" target="_blank" rel="noopener noreferrer nofollow ugc" class="css-aybayc">Instagram Clone</a></h2><div class="css-bi4upt">Developer<div class="css-1kvlhqq"> | </div><br class="css-1bmsfsu"><span>Aug, 2020<!-- --> - <!-- -->Sep, 2020</span></div><div><ul class="css-1yh09yi"><li class="css-1wnhxku">Written In Typescript</li><li class="css-1wnhxku">Based On MVC Inspired By Nest.js</li><li class="css-1wnhxku">Tests Included</li></ul></div></div><div class="css-1hssjnd"><h2 class="css-xfpfks"><a href="https://github.com/KiarashSabahi/WorkSpace" target="_blank" rel="noopener noreferrer nofollow ugc" class="css-aybayc">Workspace</a></h2><div class="css-bi4upt">Backend Developer<div class="css-1kvlhqq"> | </div><br class="css-1bmsfsu"><span>Jul<!-- --> - <!-- -->Aug</span></div><div><ul class="css-1yh09yi"><li class="css-1wnhxku">Based On MVC Architecture </li><li class="css-1wnhxku">Relational Database for Chats And Messages</li><li class="css-1wnhxku">Implemented Notification Service With Redis</li></ul></div></div><div class="css-1hssjnd"><h2 class="css-xfpfks"><a href="https://github.com/KiarashSabahi/Violet-messenger" target="_blank" rel="noopener noreferrer nofollow ugc" class="css-aybayc">Violet Messenger</a></h2><div class="css-bi4upt">Developer<div class="css-1kvlhqq"> | </div><br class="css-1bmsfsu"><span>Apr, 2020<!-- --> - <!-- -->Jul, 2020</span></div><div><ul class="css-1yh09yi"><li class="css-1wnhxku">Implementing Socket.io For Real-time Chats</li><li class="css-1wnhxku">Recreating Socket.io Room With Redis</li><li class="css-1wnhxku">Storing Messages In MongoDB</li></ul></div></div></section></div></div></main></div></body><div class="itanywhere-activator" style="display: none;"></div></html>
